@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mahnaj Binta Rahman</title>
+  <meta name="description" content="CSE student at UIU building toward ML/AI and cybersecurity.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="design.css">
+</head>
+<body>
+  <div class="wrap">
+    <nav>
+      <a class="brand" href="#top" id="brand"></a>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <header class="hero" id="top">
+      <div>
+        <h1 id="name"></h1>
+        <div class="role" id="role"></div>
+        <p class="lead" id="lead"></p>
+        <div class="btns">
+          <a class="btn primary" href="#projects">See my projects</a>
+          <a class="btn" href="#contact">Get in touch</a>
+        </div>
+      </div>
+      <div class="portrait">
+        <svg viewBox="0 0 400 400" aria-hidden="true">
+          <ellipse cx="200" cy="200" rx="190" ry="165" transform="rotate(-18 200 200)"/>
+          <ellipse cx="200" cy="200" rx="170" ry="145" transform="rotate(-10 200 200)"/>
+          <ellipse cx="200" cy="200" rx="150" ry="128" transform="rotate(-2 200 200)"/>
+          <ellipse cx="200" cy="200" rx="130" ry="112" transform="rotate(8 200 200)"/>
+          <ellipse cx="200" cy="200" rx="112" ry="96" transform="rotate(16 200 200)"/>
+        </svg>
+        <div class="photo" id="photo"></div>
+      </div>
+    </header>
+  </div>
+
+  <section id="about"><div class="wrap">
+    <h2>About</h2>
+    <div class="about-text" id="about-text"></div>
+  </div></section>
+
+  <section id="projects"><div class="wrap">
+    <h2>Projects</h2>
+    <div class="grid" id="projects-grid"></div>
+  </div></section>
+
+  <section id="skills"><div class="wrap">
+    <h2>Skills</h2>
+    <div class="skills" id="skills-grid"></div>
+  </div></section>
+
+  <section id="contact" class="contact"><div class="wrap">
+    <h2>Contact</h2>
+    <p id="contact-text"></p>
+    <div class="btns" id="contact-links"></div>
+    <form class="form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <label>Name <input type="text" name="name" required></label>
+      <label>Email <input type="email" name="email" required></label>
+      <label>Message <textarea name="message" required></textarea></label>
+      <button class="btn primary" type="submit">Send message</button>
+    </form>
+  </div></section>
+
+  <footer><div class="wrap" id="footer"></div></footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
